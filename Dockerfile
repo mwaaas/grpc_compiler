@@ -16,4 +16,7 @@ RUN apt-get update && apt-get install -y  \
     && rm -rf /tmp/* \
     && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
 ENTRYPOINT ["protoc"]
