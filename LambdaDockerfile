@@ -1,8 +1,6 @@
 FROM amazonlinux
 
-RUN yum -y update && yum -y install python27-devel python27 python27-pip gcc gcc-c++
+RUN yum -y update && yum -y install python27-devel python27 python27-pip gcc gcc-c++ zip
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
-
-RUN pip install grpcio==1.2.1 grpcio-tools==1.2.1
