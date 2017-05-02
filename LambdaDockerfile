@@ -1,6 +1,6 @@
 FROM amazonlinux
 
-RUN yum -y update && yum -y install python27-devel python27 python27-pip gcc gcc-c++ zip
+RUN yum -y update && yum -y install python27-devel python27 python27-pip python36-devel  python36  python36-pip gcc gcc-c++ zip
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
