@@ -28,3 +28,8 @@ RUN   yum -y update && \
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
+
+RUN mkdir /usr/src/build
+COPY . /usr/src/build
+
+CMD /usr/src/build/build_lambda.sh
