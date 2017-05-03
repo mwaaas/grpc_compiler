@@ -19,4 +19,4 @@ RUN apt-get update && apt-get install -y  \
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-ENTRYPOINT ["protoc"]
+CMD ["protoc"]
